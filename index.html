@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lantern Secure Solutions</title>
+<style>
+  body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    color: #FFFFFF; /* Keeps default text color to white for the whole body */
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+  .text-below-logo {
+    margin-top: 20px;
+    color: #FFFFFF; /* Sets the text color to white */
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Palatino Linotype', 'Palatino', serif; /* Attempts to use Palatino or falls back to a generic serif font */
+  }
+  .copy-below-text {
+    margin-top: 20px;
+    color: #FFFFFF; /* Sets the text color to white */
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Palatino Linotype', 'Palatino', serif; /* Attempts to use Palatino or falls back to a generic serif font */
+  }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  function changeImageToContact() {
+    document.getElementById('logoImage').src = 'contact.png';
+  }
+
+  function revertImageToOriginal() {
+    document.getElementById('logoImage').src = 'logo.png';
+  }
+</script>
+</head>
+
+<body>
+<img src="logo.png" alt="Lantern Logo" width="811" height="248" id="logoImage" onmouseover="changeImageToContact()" onmouseout="revertImageToOriginal()">
+<div class="text-below-logo">
+Security Consulting and Managed Solutions
+</div>
+<div class="copy-below-text">
+© 2024 Lantern Secure Solutions. All Rights Reserved.
+</div>
+</body>
+</html>
